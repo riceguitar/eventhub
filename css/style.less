@@ -42,6 +42,9 @@ body {min-width: 400px;}
 					.proximasemi;
 				}
 			}
+			.btn-primary.dropdown-toggle {
+				background-image: linear-gradient(to bottom, @blue 0px, @darkblue 100%);
+			}
 			.dropdown-menu {
 				right: 0;
 				left: auto;
@@ -114,11 +117,54 @@ main {
 
 /***** PAGES *****/
 main.dashboard {
+	.col-sm-3 {
+		border-left: 2px solid #cccccc;
+		h3 {
+			.proxima;
+			font-size: 20px;
+			color: #636363;
+			text-transform: uppercase;
+		}
+		p {
+			color: #636363;
+			font-size: 14px;
+		}
+		a.link {
+			.green;
+			.proximabold;
+			font-size: 13px;
+			text-transform: uppercase;
+			letter-spacing: .1em;
+		}
+		section {
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+			border-bottom: 1px solid #cccccc;
+			&:last-of-type {
+				border-bottom: none;
+			}
+		}
+	}
+	.btn.small {
+		font-size: 12px;
+		.proximasemi;
+		margin-top: 10px;
+		margin-right: 10px;
+	}
+	article.form.expired {
+		h2, .green, p, strong {
+			color: #bababa;
+		}
+		span {
+			background: #eaeaea;
+		}
+	}
 	article.form {
 		background: #f0f0f0;
 		border: 1px solid #dcdcdc;
 		border-radius: 4px;
 		padding: 17px 17px 17px 22px;
+		margin-bottom: 15px;
 		h2 {
 			.green;
 			display: block;
@@ -200,11 +246,12 @@ body {
 		float: right;
 	}
 	article { position: relative; }
+	.btn.text-left {
+		  text-align:left;
+	}
+	.elements-list .btn i {
+		float: right;
+	}
 }
 
 /***** BOOTSTRAP DEFAULT OVERRIDES *****/
-body {
-	.btn-primary {
-		background-image: linear-gradient(to bottom, @blue 0px, @darkblue 100%);
-	}
-}
