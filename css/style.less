@@ -480,7 +480,7 @@ main.conference-details {
 			}
 			input[type="checkbox"] { margin-right: 5px }
 		}
-		a.label { margin-right: 5px; }
+		button.label { margin-right: 5px; border: none; }
 		label.space { margin-right: 20px; }
 	}
 	.col-md-3 {
@@ -716,38 +716,5 @@ body {
 	.label-success, .btn-success { background: @green; }
 	.label-primary, .btn-primary { background: @blue; }
 	.nav-pills .active a { background: @darkerblue; }
-}
-
-/***** FANCYBOX OVERRIDES *****/
-body {
-	.fancybox-close {
-		background: none;
-		&:before {
-			content: 'x';
-			font-size: 18px;
-			font-weight: bold;
-			color: #cccccc;
-			position: absolute;
-			bottom: -12px;
-			left: -7px;
-		}
-	}
-	.fancybox-skin { background: @white; }
-	.fancybox-inner {
-		min-width: 304px;
-		label { margin-top: 10px; }
-		.container { max-width: 350px; }
-		hr { margin-bottom: 0; }
-		h3 {
-			font-size:16px;
-			.darkgray;
-			.proximamedium;
-			margin-top: 0;
-		}
-		button {
-			float: right;
-			margin-left: 8px;
-			margin-top: 20px;
-		}
-	}
+	.modal-body .container { max-width: 560px; }
 }

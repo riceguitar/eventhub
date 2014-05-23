@@ -155,8 +155,10 @@
 							</div>
 						</div>
 					</div><br>
-					<input type="checkbox" value="creditcards"><a href="/includes/option-creditcard" class="lightbox fancybox.ajax label label-success">Options</a><label class="space">Accept Credit Cards?</label><br>
-					<input type="checkbox" value="creditcards"><a href="/includes/option-registration" class="lightbox fancybox.ajax label label-success">Options</a><label class="space">Early Bird Registration?</label>
+					<input type="checkbox" value="creditcards"><button class="label label-success" type="button" data-toggle="modal" data-target="#creditcardModal">Options</button><label class="space">Accept Credit Cards?</label><br>
+					<input type="checkbox" value="creditcards"><button class="label label-success" type="button" data-toggle="modal" data-target="#registrationModal">Options</button><label class="space">Early Bird Registration?</label>
+					<?php include('includes/option-creditcard.php'); ?>
+					<?php include('includes/option-registration.php'); ?>
 				</section>
 				<section>
 					<h2>Registration Window</h2>

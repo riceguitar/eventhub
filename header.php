@@ -30,11 +30,6 @@
 <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
 <!-- End Font Awesome -->
 
-<!-- Fancybox -->
-<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-<!-- End Fancybox -->
-
 <!-- Eventhub CSS/JS -->
 <link rel="stylesheet/less" href="/css/style.less">
 <script src="/js/formvent.js" type="text/javascript"></script>

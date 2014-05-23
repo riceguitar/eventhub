@@ -11,26 +11,7 @@ jQuery(function($) {
 		language: 'en',
     	pick12HourFormat: true
     });
-	
-	$(".lightbox").fancybox({
-		'width': 304,
-		'min-width': 304,
-		'height': 'auto',
-		'min-height': 412,
-		'autoDimensions': false,
-		beforeShow: function(){
-				$('.datepicker').datetimepicker({
-					pickTime: false,
-					language: 'en'
-				});
-				$('.timepicker').datetimepicker({
-					pickDate: false,
-					language: 'en',
-					pick12HourFormat: true
-				}); 
-		}
-	});
-	
+
 	$('#sortable').sortable( { handle: '.handle' } );
 		
 	$('#ajax-address').click( function() {
