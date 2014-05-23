@@ -147,8 +147,8 @@
 							</div>
 						</div>
 					</div><br>
-					<input type="checkbox" value="creditcards"><span class="label label-success">Options</span><label class="space">Accept Credit Cards?</label><br>
-					<input type="checkbox" value="creditcards"><span class="label label-success">Options</span><label class="space">Early Bird Registration?</label>
+					<input type="checkbox" value="creditcards"><a href="/includes/option-creditcard" class="lightbox fancybox.ajax label label-success">Options</a><label class="space">Accept Credit Cards?</label><br>
+					<input type="checkbox" value="creditcards"><a href="/includes/option-registration" class="lightbox fancybox.ajax label label-success">Options</a><label class="space">Early Bird Registration?</label>
 				</section>
 				<section>
 					<h2>Registration Window</h2>

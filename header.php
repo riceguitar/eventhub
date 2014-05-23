@@ -25,10 +25,15 @@
 <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
 <!-- End Font Awesome -->
 
-<!-- Formvent CSS/JS -->
+<!-- Fancybox -->
+<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+<!-- End Fancybox -->
+
+<!-- Eventhub CSS/JS -->
 <link rel="stylesheet/less" href="/css/style.less">
 <script src="/js/formvent.js" type="text/javascript"></script>
-<!-- End Formvent CSS/JS -->
+<!-- End Eventhub CSS/JS -->
 
 <!-- Less Compressor -->
 <script src="/js/less-1.4.1.min.js" type="text/javascript"></script>

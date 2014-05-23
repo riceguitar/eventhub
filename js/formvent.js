@@ -1,6 +1,17 @@
 // JavaScript Document
 
 jQuery(function($) {
+
+	$(".lightbox").fancybox({
+		'width': 304,
+		'min-width': 304,
+		'height': 'auto',
+		'min-height': 412,
+		'autoDimensions': false,
+		afterLoad: function(current, previous){
+				// initialize your js stuff  
+		}
+	});
 	
 	$('#sortable').sortable( { handle: '.handle' } );
 		
