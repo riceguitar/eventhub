@@ -2,12 +2,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="width=device-width">
 <title>CRU Formvent <?php if ($pagetitle != '') { echo ' | ' . $pagetitle; } ?></title>
 <link rel="icon" type="image/png" href="/img/favicon.png" />
 
 <!-- jQuery -->
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 <!-- End jQuery -->
 
 <!-- Bootstrap -->
@@ -50,12 +51,14 @@
 							<span class="caret"></span>
 							<span class="sr-only">Toggle Dropdown</span>
 						</button>
-						<ul class="dropdown-menu" role="menu">
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li class="dropdown-header">Navigation</li>
 							<li class="blue"><a href="/registrations">Registrations</a></li>
 							<li class="blue"><a href="/edit-form">Edit Form</a></li>
 							<li class="blue"><a href="/conference-details">Details</a>
 							<li class="divider"></li>
-							<li><a href="#">Separated link</a></li>
+							<li class="dropdown-header">More Links</li>
+							<li><a href="#">Link 1</a></li>
 						</ul>
 					</div>
 				</div>
@@ -69,9 +72,7 @@
 				<div class="<?php if ($basename == 'index') { echo 'col-sm-3'; } else { echo 'col-sm-4'; } ?>">
 					<h1>
 					<?php
-						if ($basename == 'index') {
-							echo 'Dashboard';
-						} elseif ($pagetitle != '') {
+						if ($pagetitle != '') {
 							echo $pagetitle;
 						} else {
 							echo 'Default Title';
@@ -81,7 +82,7 @@
 				</div>
 				<div class="<?php if ($basename == 'index') { echo 'col-sm-6'; } else { echo 'col-sm-5'; } ?>">
 					<?php if ($basename == 'index') { ?>
-						<a href="#" class="btn btn-success newform-btn" role="button"><i class="fa fa-plus"></i> Create New Form</a>
+						<a href="/edit-form" class="btn btn-success newform-btn" role="button"><i class="fa fa-plus"></i> Create New Form</a>
 					<?php } else { ?>	
 						<nav id="subnav">
 							<ul class="horizontal">
