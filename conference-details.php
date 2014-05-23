@@ -6,7 +6,7 @@
 			<form>
 				<section>
 					<h2>Conference Information</h2>
-					<div class="input-group-lg">
+					<div class="form-group">
 						<label>Conference Name</label>
 						<input type="text" class="form-control" placeholder="">
 					</div>
@@ -21,13 +21,13 @@
 							<label>Conference Starts</label><br>
 							<div class="row">
 								<div class="col-sm-6">
-									<div class="input-group input-group-lg">
+									<div class="input-group">
 										<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
 										<input type="text" class="form-control marginless" placeholder="Date">
 									</div>
 								</div>
 								<div class="col-sm-6">
-									<div class="input-group input-group-lg">
+									<div class="input-group">
 										<input type="text" class="form-control marginless" placeholder="Time">
 										<span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
 									</div>
@@ -38,13 +38,13 @@
 							<label>Conference Ends</label><br>
 							<div class="row">
 								<div class="col-sm-6">
-									<div class="input-group input-group-lg">
+									<div class="input-group">
 										<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
 										<input type="text" class="form-control marginless" placeholder="Date">
 									</div>
 								</div>
 								<div class="col-sm-6">
-									<div class="input-group input-group-lg">
+									<div class="input-group">
 										<input type="text" class="form-control marginless" placeholder="Time">
 										<span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
 									</div>
@@ -55,7 +55,7 @@
 				</section>
 				<section>
 					<h2>Location</h2>
-					<div class="input-group-lg">
+					<div class="form-group">
 						<label>Location Name</label>
 						<input type="text" class="form-control" placeholder="Name">
 						<label>Mailing Address</label>
@@ -63,14 +63,14 @@
 						<input type="text" class="form-control" placeholder="Address Line 2">
 						<div class="row">
 							<div class="col-sm-6">
-								<div class="input-group-lg">
+								<div class="form-group">
 									<input type="text" class="form-control" placeholder="City">
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="row">
 									<div class="col-sm-6">
-										<div class="input-group-lg">
+										<div class="form-group">
 											<select class="form-control">
 												<option value="AL">Alabama</option>
 												<option value="AK">Alaska</option>
@@ -127,7 +127,7 @@
 										</div>
 									</div>
 									<div class="col-sm-6">
-										<div class="input-group-lg">
+										<div class="form-group">
 											<input type="text" class="form-control" placeholder="Postal Code">
 										</div>
 									</div>
@@ -141,7 +141,7 @@
 					<div class="row">
 						<div class="col-sm-6">
 							<label>Cost</label><br>
-							<div class="input-group input-group-lg col-sm-6">
+							<div class="input-group col-sm-6">
 								<span class="input-group-addon"><i class="fa fa-usd"></i></span>
 								<input type="text" class="form-control marginless" placeholder="20.00">
 							</div>
@@ -157,13 +157,13 @@
 							<label>Registration Starts</label><br>
 							<div class="row">
 								<div class="col-sm-6">
-									<div class="input-group input-group-lg">
+									<div class="input-group">
 										<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
 										<input type="text" class="form-control marginless" placeholder="Date">
 									</div>
 								</div>
 								<div class="col-sm-6">
-									<div class="input-group input-group-lg">
+									<div class="input-group">
 										<input type="text" class="form-control marginless" placeholder="Time">
 										<span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
 									</div>
@@ -174,13 +174,13 @@
 							<label>Registration Ends</label><br>
 							<div class="row">
 								<div class="col-sm-6">
-									<div class="input-group input-group-lg">
+									<div class="input-group">
 										<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
 										<input type="text" class="form-control marginless" placeholder="Date">
 									</div>
 								</div>
 								<div class="col-sm-6">
-									<div class="input-group input-group-lg">
+									<div class="input-group">
 										<input type="text" class="form-control marginless" placeholder="Time">
 										<span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
 									</div>
@@ -192,15 +192,15 @@
 				<section>
 					<h2>Contact Information</h2>
 					<div class="row">
-						<div class="input-group-lg col-sm-4">
+						<div class="form-group col-sm-4">
 							<label>Name</label>
 							<input type="text" class="form-control" placeholder="John Smith">
 						</div>
-						<div class="input-group-lg col-sm-4">
+						<div class="form-group col-sm-4">
 							<label>Email</label>
 							<input type="text" class="form-control" placeholder="example@email.com">
 						</div>
-						<div class="input-group-lg col-sm-4">
+						<div class="form-group col-sm-4">
 							<label>Phone</label>
 							<input type="text" class="form-control" placeholder="(XXX) XXX-XXXX">
 						</div>
