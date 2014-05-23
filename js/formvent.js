@@ -2,14 +2,32 @@
 
 jQuery(function($) {
 
+	$('.datepicker').datetimepicker({
+    	pickTime: false,
+		language: 'en'
+    });
+	$('.timepicker').datetimepicker({
+    	pickDate: false,
+		language: 'en',
+    	pick12HourFormat: true
+    });
+	
 	$(".lightbox").fancybox({
 		'width': 304,
 		'min-width': 304,
 		'height': 'auto',
 		'min-height': 412,
 		'autoDimensions': false,
-		afterLoad: function(current, previous){
-				// initialize your js stuff  
+		beforeShow: function(){
+				$('.datepicker').datetimepicker({
+					pickTime: false,
+					language: 'en'
+				});
+				$('.timepicker').datetimepicker({
+					pickDate: false,
+					language: 'en',
+					pick12HourFormat: true
+				}); 
 		}
 	});
 	

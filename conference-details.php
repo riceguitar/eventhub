@@ -21,15 +21,19 @@
 							<label>Conference Starts</label><br>
 							<div class="row">
 								<div class="col-sm-6">
-									<div class="input-group">
-										<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-										<input type="text" class="form-control marginless" placeholder="Date">
+									<div class="datepicker input-group input-append">
+										<span class="input-group-addon add-on">
+											<i class="fa fa-calendar"></i>
+										</span>
+										<input data-format="yyyy-MM-dd" type="text" class="form-control marginless" placeholder="Date">
 									</div>
 								</div>
 								<div class="col-sm-6">
-									<div class="input-group">
-										<input type="text" class="form-control marginless" placeholder="Time">
-										<span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+									<div class="timepicker input-group input-append">
+										<input data-format="hh:mm:ss" type="text" class="form-control marginless" placeholder="Time">
+										<span class="input-group-addon add-on">
+											<i class="fa fa-clock-o"></i>
+										</span>
 									</div>
 								</div>
 							</div>
@@ -38,15 +42,19 @@
 							<label>Conference Ends</label><br>
 							<div class="row">
 								<div class="col-sm-6">
-									<div class="input-group">
-										<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-										<input type="text" class="form-control marginless" placeholder="Date">
+									<div class="datepicker input-group input-append">
+										<span class="input-group-addon add-on">
+											<i class="fa fa-calendar"></i>
+										</span>
+										<input data-format="yyyy-MM-dd" type="text" class="form-control marginless" placeholder="Date">
 									</div>
 								</div>
 								<div class="col-sm-6">
-									<div class="input-group">
-										<input type="text" class="form-control marginless" placeholder="Time">
-										<span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+									<div class="timepicker input-group input-append">
+										<input data-format="hh:mm:ss" type="text" class="form-control marginless" placeholder="Time">
+										<span class="input-group-addon add-on">
+											<i class="fa fa-clock-o"></i>
+										</span>
 									</div>
 								</div>
 							</div>
@@ -157,15 +165,19 @@
 							<label>Registration Starts</label><br>
 							<div class="row">
 								<div class="col-sm-6">
-									<div class="input-group">
-										<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-										<input type="text" class="form-control marginless" placeholder="Date">
+									<div class="datepicker input-group input-append">
+										<span class="input-group-addon add-on">
+											<i class="fa fa-calendar"></i>
+										</span>
+										<input data-format="yyyy-MM-dd" type="text" class="form-control marginless" placeholder="Date">
 									</div>
 								</div>
 								<div class="col-sm-6">
-									<div class="input-group">
-										<input type="text" class="form-control marginless" placeholder="Time">
-										<span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+									<div class="timepicker input-group input-append">
+										<input data-format="hh:mm:ss" type="text" class="form-control marginless" placeholder="Time">
+										<span class="input-group-addon add-on">
+											<i class="fa fa-clock-o"></i>
+										</span>
 									</div>
 								</div>
 							</div>
@@ -174,15 +186,19 @@
 							<label>Registration Ends</label><br>
 							<div class="row">
 								<div class="col-sm-6">
-									<div class="input-group">
-										<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-										<input type="text" class="form-control marginless" placeholder="Date">
+									<div class="datepicker input-group input-append">
+										<span class="input-group-addon add-on">
+											<i class="fa fa-calendar"></i>
+										</span>
+										<input data-format="yyyy-MM-dd" type="text" class="form-control marginless" placeholder="Date">
 									</div>
 								</div>
 								<div class="col-sm-6">
-									<div class="input-group">
-										<input type="text" class="form-control marginless" placeholder="Time">
-										<span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+									<div class="timepicker input-group input-append">
+										<input data-format="hh:mm:ss" type="text" class="form-control marginless" placeholder="Time">
+										<span class="input-group-addon add-on">
+											<i class="fa fa-clock-o"></i>
+										</span>
 									</div>
 								</div>
 							</div>

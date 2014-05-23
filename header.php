@@ -16,6 +16,11 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 <!-- End Bootstrap -->
 
+<!-- Bootstrap Date/Time Picker -->
+<link rel="stylesheet" href="/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
+<script src="/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<!-- End Bootstrap Date/Time Picker -->
+
 <!-- Typekit -->
 <script type="text/javascript" src="//use.typekit.net/mgc7mdg.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
