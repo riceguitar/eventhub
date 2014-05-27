@@ -4,7 +4,7 @@
 <main class="container form-builder">
 	<div class="row">
 		<!-- Elements -->
-		<div class="col-md-3 elements-list">
+		<div class="col-xs-3 elements-list">
 			<h4>Form Elements</h4>
 			<button id="ajax-information" type="button" class="btn btn-default btn-sm btn-block text-left">Information Box <i class="fa fa-plus-circle"></i></button>
 			<button id="ajax-single-line-question" type="button" class="btn btn-default btn-sm btn-block text-left">Single Line Text Question <i class="fa fa-pencil-square-o"></i></button>
@@ -20,18 +20,28 @@
 		</div>
 
 		<!-- Page -->
-		<div class="col-md-9 form-page">
-			<a href="#" class="btn btn-primary"><i class="fa fa-plus"></i> Add New Page</a>
+		<div class="col-xs-9 form-page">
+			<a href="#" class="btn btn-primary"><i class="fa fa-plus"></i> Add New Page</a><a href="#" class="btn btn-danger"><i class="fa fa-times"></i> Delete Page</a>
 			<a href="#" class="btn btn-success save-btn btn-right">Save &amp; Close Form</a>
 			<form class="form" role="form">
-			<div class="well well-sm">
-				<div class="row">
-					<div class="col-md-10 col-md-offset-2">
+			<div class="well well-sm overflow">
+				<div class="row shrink">
+					<div class="col-xs-10 col-xs-offset-2">
 						<h1><input placeholder="Page Title" type="text"></h1>
 					</div>
 				</div>
 <ul id="sortable"></ul>
 			</div>
+			<ul class="pager">
+			  <li><a href="#">Previous Page</a></li>
+			  <li><a href="#">Next Page</a></li>
+			</ul>
+			Go to page: 
+			<select>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			</select>
 
 		</div>
 	</div>
