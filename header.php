@@ -2,7 +2,6 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
 <title>CRU Formvent <?php if ($pagetitle != '') { echo ' | ' . $pagetitle; } ?></title>
 <link rel="icon" type="image/png" href="/img/favicon.png" />
 
@@ -74,7 +73,7 @@
 	<section id="pagetitle" class="<?php echo $basename ?>">
 		<div class="container">
 			<div class="row">
-				<div class="<?php if ($basename == 'index') { echo 'col-sm-3'; } else { echo 'col-sm-4'; } ?>">
+				<div class="<?php if ($basename == 'index') { echo 'col-xs-3'; } else { echo 'col-xs-4'; } ?>">
 					<h1>
 					<?php
 						if ($pagetitle != '') {
@@ -85,7 +84,7 @@
 					?>
 					</h1>
 				</div>
-				<div class="<?php if ($basename == 'index') { echo 'col-sm-6'; } else { echo 'col-sm-5'; } ?>">
+				<div class="<?php if ($basename == 'index') { echo 'col-xs-6'; } else { echo 'col-xs-5'; } ?>">
 					<?php if ($basename == 'index') { ?>
 						<a href="/edit-form" class="btn btn-success newform-btn" role="button"><i class="fa fa-plus"></i> Create New Form</a>
 					<?php } else { ?>	
@@ -108,7 +107,7 @@
 						</nav>
 					<?php } ?>
 				</div>
-				<div class="col-sm-3 right">
+				<div class="col-xs-3 right">
 					<?php if ($basename !== 'index') { ?>
 					<a href="#" class="btn btn-primary help-btn" role="button"><i class="fa fa-medkit"></i> I Need Help!</a>
 					<?php } ?>

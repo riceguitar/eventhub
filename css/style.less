@@ -27,13 +27,14 @@
 /***** GLOBALS *****/
 * {.proxima;}
 
-body {min-width: 400px;}
+body {min-width: 1200px;}
 
 body.frontend {
 	min-width: 320px;
 	background: url('../img/rough_diagonal.png') #e7e8e6;
 	.container {
 		max-width: 612px;
+		width: auto !important;
 	}
 	.nav-pills {
 		li {
@@ -282,8 +283,8 @@ main.registrations {
 			span { padding: 0 10px; }
 		}
 	}
-	.col-sm-3 { margin-top: 10px; margin-bottom: 10px; }
-	.col-sm-5 { margin-bottom: 15px; }
+	.col-xs-3 { margin-top: 10px; margin-bottom: 10px; }
+	.col-xs-5 { margin-bottom: 15px; }
 	p.columns {
 		.gray;
 		.proximasemi;
@@ -341,6 +342,12 @@ main.form-builder {
 	}
 	.form-page {
 		border-left: 2px solid #cccccc;
+		min-height: 500px;
+		a.btn + a.btn { margin-left: 10px; }
+		ul.pager { display: inline-block; margin-right: 20px; }
+		.overflow { overflow: scroll; height: 450px; 
+			.shrink { width: 90%; }
+		}
 		form { margin-top: 30px; }
 		h1 {
 			.green;
@@ -356,10 +363,10 @@ main.form-builder {
 		.formelement.edit {
 			.well {
 				border: 1px solid #E3E3E3; background: @creme; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset; 
-				.col-md-2 {
+				.col-xs-2 {
 					opacity: 1;
 				}
-				.col-md-10 {
+				.col-xs-10 {
 					margin-bottom: 0;
 					.edit-options {
 						display: block;
@@ -373,17 +380,17 @@ main.form-builder {
 		.well { background: transparent; padding-bottom: 25px;
 			.well { background: transparent; border: 1px solid @white; box-shadow: none;
 				&:hover { border: 1px solid #E3E3E3; background: @creme; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset; 
-					.col-md-2 {
+					.col-xs-2 {
 						opacity: 1;
 					}
-					.col-md-10 {
+					.col-xs-10 {
 						margin-bottom: 0;
 						.btn-sm {
 							opacity: 1;
 						}
 					}
 				}
-				.col-md-2 {
+				.col-xs-2 {
 					.green;
 					font-size: 28px;
 					text-align: center;
@@ -391,7 +398,7 @@ main.form-builder {
 					.fa-pencil-square-o { margin-right: -6px; cursor: pointer;}
 					p { font-size: 14px; cursor: pointer; display: block; width: 25px; margin: -8px auto 15px;}
 				}
-				.col-md-10 {
+				.col-xs-10 {
 					margin-bottom: -40px;
 					transition: all .2s;
 					label { display: block; }
@@ -460,7 +467,7 @@ main.form-builder {
 	}
 }
 main.conference-details {
-	.col-md-9 {
+	.col-xs-9 {
 		border-right: 2px solid #cccccc;
 		h2 {
 			.green;
@@ -483,7 +490,7 @@ main.conference-details {
 		button.label { margin-right: 5px; border: none; }
 		label.space { margin-right: 20px; }
 	}
-	.col-md-3 {
+	.col-xs-3 {
 		h3 {
 			.proxima;
 			font-size: 20px;
@@ -512,8 +519,8 @@ main.conference-details {
 	}
 }
 main.dashboard {
-	.col-sm-8 { margin-bottom: 25px; }
-	.col-sm-3 {
+	.col-xs-8 { margin-bottom: 25px; }
+	.col-xs-3 {
 		border-left: 2px solid #cccccc;
 		h3 {
 			.proxima;
@@ -653,7 +660,7 @@ body {
 		li { display: inline-block; }
 		ul li { display: block; }
 	}
-	.col-sm-3.right {
+	.col-xs-3.right {
 		text-align: right;
 	}
 	.col-xs-3.right, .col-xs-4.right {
@@ -709,10 +716,13 @@ body {
 		.add-on { cursor: pointer; }
 	}
 	.bootstrap-datetimepicker-widget { z-index: 10000; }
+	button.nostyle { background: none; border: none; padding: 0; }
+	#registrationsModal input { margin-bottom: 9px; }
 }
 
 /***** BOOTSTRAP DEFAULT OVERRIDES *****/
 body {
+	.container { width: 1170px !important; }
 	.label-success, .btn-success { background: @green; }
 	.label-primary, .btn-primary { background: @blue; }
 	.nav-pills .active a { background: @darkerblue; }

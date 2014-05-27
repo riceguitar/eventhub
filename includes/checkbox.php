@@ -1,11 +1,11 @@
 <li class="handle">
 	<div class="well well-sm edit-box-checkbox">
 		<div class="row">
-			<div class="col-md-2">
+			<div class="col-xs-2">
 				<i class="fa fa-pencil-square-o editme"></i>
 				<p class="editme">Edit</p>
 			</div>
-			<div class="col-md-10">
+			<div class="col-xs-10">
 				<div class="form-inline">
 					<div class="form-group">
 						<label class="field-label" for="field-1">Checkbox</label>

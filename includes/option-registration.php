@@ -8,7 +8,7 @@
 			<div class="modal-body">
 				<div class="form-group container">
 					<div class="row">
-						<div class="col-sm-12">
+						<div class="col-xs-12">
 							<label>Early Bird Start</label>
 						</div>
 						<div class="col-xs-6">
@@ -27,7 +27,7 @@
 								</span>
 							</div>
 						</div>
-						<div class="col-sm-12">
+						<div class="col-xs-12">
 							<br>
 							<label>Early Bird End</label>
 						</div>

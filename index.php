@@ -2,7 +2,7 @@
 <?php include('header.php'); ?>
 <main class="container<?php echo ' ' . preg_replace("/[\s_]/", "-", strtolower($pagetitle)); ?>">
 	<div class="row">
-		<div class="col-sm-8">
+		<div class="col-xs-8">
 			<p>Showing <strong>1-10 of 20</strong> forms</p>
 			<ul id="sortable">
 				<li class="form">
@@ -35,9 +35,9 @@
 			<a class="btn btn-default small" href="#"><i class="fa fa-arrow-left"></i> Previous</a>
 			<a class="btn btn-primary small" href="#">Next <i class="fa fa-arrow-right"></i></a>
 		</div>
-		<div class="col-sm-1 line">
+		<div class="col-xs-1 line">
 		</div>
-		<aside class="col-sm-3">
+		<aside class="col-xs-3">
 			<a href="#" class="btn btn-primary help-btn" role="button"><i class="fa fa-medkit"></i> I Need Help!</a>
 			<section>
 				<h3>Questions?</h3>

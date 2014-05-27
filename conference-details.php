@@ -2,7 +2,7 @@
 <?php include('header.php'); ?>
 <main class="container conference-details">
 	<div class="row">
-		<div class="col-md-9">
+		<div class="col-xs-9">
 			<form>
 				<section>
 					<h2>Conference Information</h2>
@@ -17,10 +17,10 @@
 				<section>
 					<h2>Conference Dates</h2>
 					<div class="row">
-						<div class="col-sm-6">
+						<div class="col-xs-6">
 							<label>Conference Starts</label><br>
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-xs-6">
 									<div class="datepicker input-group input-append">
 										<span class="input-group-addon add-on">
 											<i class="fa fa-calendar"></i>
@@ -28,7 +28,7 @@
 										<input data-format="yyyy-MM-dd" type="text" class="form-control marginless" placeholder="Date">
 									</div>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-xs-6">
 									<div class="timepicker input-group input-append">
 										<input data-format="hh:mm:ss" type="text" class="form-control marginless" placeholder="Time">
 										<span class="input-group-addon add-on">
@@ -38,10 +38,10 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6">
+						<div class="col-xs-6">
 							<label>Conference Ends</label><br>
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-xs-6">
 									<div class="datepicker input-group input-append">
 										<span class="input-group-addon add-on">
 											<i class="fa fa-calendar"></i>
@@ -49,7 +49,7 @@
 										<input data-format="yyyy-MM-dd" type="text" class="form-control marginless" placeholder="Date">
 									</div>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-xs-6">
 									<div class="timepicker input-group input-append">
 										<input data-format="hh:mm:ss" type="text" class="form-control marginless" placeholder="Time">
 										<span class="input-group-addon add-on">
@@ -75,9 +75,9 @@
 									<input type="text" class="form-control" placeholder="City">
 								</div>
 							</div>
-							<div class="col-sm-6">
+							<div class="col-xs-6">
 								<div class="row">
-									<div class="col-sm-6">
+									<div class="col-xs-6">
 										<div class="form-group">
 											<select class="form-control">
 												<option value="AL">Alabama</option>
@@ -134,7 +134,7 @@
 											</select>
 										</div>
 									</div>
-									<div class="col-sm-6">
+									<div class="col-xs-6">
 										<div class="form-group">
 											<input type="text" class="form-control" placeholder="Postal Code">
 										</div>
@@ -147,9 +147,9 @@
 				<section>
 					<h2>Payment Options</h2>
 					<div class="row">
-						<div class="col-sm-6">
+						<div class="col-xs-6">
 							<label>Cost</label><br>
-							<div class="input-group col-sm-6">
+							<div class="input-group col-xs-6">
 								<span class="input-group-addon"><i class="fa fa-usd"></i></span>
 								<input type="text" class="form-control marginless" placeholder="20.00">
 							</div>
@@ -166,7 +166,7 @@
 						<div class="col-sm-6">
 							<label>Registration Starts</label><br>
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-xs-6">
 									<div class="datepicker input-group input-append">
 										<span class="input-group-addon add-on">
 											<i class="fa fa-calendar"></i>
@@ -174,7 +174,7 @@
 										<input data-format="yyyy-MM-dd" type="text" class="form-control marginless" placeholder="Date">
 									</div>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-xs-6">
 									<div class="timepicker input-group input-append">
 										<input data-format="hh:mm:ss" type="text" class="form-control marginless" placeholder="Time">
 										<span class="input-group-addon add-on">
@@ -184,10 +184,10 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6">
+						<div class="col-xs-6">
 							<label>Registration Ends</label><br>
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-xs-6">
 									<div class="datepicker input-group input-append">
 										<span class="input-group-addon add-on">
 											<i class="fa fa-calendar"></i>
@@ -195,7 +195,7 @@
 										<input data-format="yyyy-MM-dd" type="text" class="form-control marginless" placeholder="Date">
 									</div>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-xs-6">
 									<div class="timepicker input-group input-append">
 										<input data-format="hh:mm:ss" type="text" class="form-control marginless" placeholder="Time">
 										<span class="input-group-addon add-on">
@@ -210,15 +210,15 @@
 				<section>
 					<h2>Contact Information</h2>
 					<div class="row">
-						<div class="form-group col-sm-4">
+						<div class="form-group col-xs-4">
 							<label>Name</label>
 							<input type="text" class="form-control" placeholder="John Smith">
 						</div>
-						<div class="form-group col-sm-4">
+						<div class="form-group col-xs-4">
 							<label>Email</label>
 							<input type="text" class="form-control" placeholder="example@email.com">
 						</div>
-						<div class="form-group col-sm-4">
+						<div class="form-group col-xs-4">
 							<label>Phone</label>
 							<input type="text" class="form-control" placeholder="(XXX) XXX-XXXX">
 						</div>
@@ -229,7 +229,7 @@
 				</div>
 			</form>
 		</div>
-		<aside class="col-md-3">
+		<aside class="col-xs-3">
 			<section>
 				<h3>Questions?</h3>
 				<p>
