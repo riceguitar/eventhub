@@ -3,10 +3,11 @@
 <main class="registrations">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-7">
+			<div class="col-xs-7">
 				<h2>Northern Michigan Fall Extravaganza</h2>
 			</div>
-			<div class="col-sm-5 colright">
+			<div class="col-xs-5 colright">
+				<a class="btn btn-success btn-sm" href="#"><i class="fa fa-plus"></i> Add Registration</a>
 				<a class="btn btn-primary btn-sm" href="#"><i class="fa fa-cloud-download"></i> Export Registrations</a>
 				<a class="btn btn-primary btn-sm" href="#"><i class="fa fa-cloud-download"></i> Export Payments</a>
 			</div>
@@ -14,12 +15,12 @@
 		<table class="table table-striped">
 			<tr class="active">
 			<td>
-				<div class="col-sm-3">
+				<div class="col-xs-3">
 					<div class="input-group-md">
 						<input type="text" class="form-control" placeholder="Keywords">
 					</div>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-xs-3">
 					<div class="btn-group">
 						<button type="button" class="btn btn-default btn-md dropdown-toggle addon" data-toggle="dropdown">
 							Payment Status <span class="addon"><span class="caret"></span></span>
@@ -32,7 +33,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-xs-3">
 					<div class="btn-group">
 						<button type="button" class="btn btn-default btn-md dropdown-toggle addon" data-toggle="dropdown">
 							Choose View <span class="addon"><span class="caret"></span></span>
@@ -45,7 +46,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-sm-3 colright">
+				<div class="col-xs-3 colright">
 					<p class="columns">Columns </p>
 						<div class="btn-group columns-btn">
 						<button type="button" class="btn btn-primary btn-md dropdown-toggle opener" data-toggle="dropdown">
@@ -86,6 +87,9 @@
 				<th class="check-paidinfull tableright">
 				Paid In Full?
 				</th>
+				<th class="tableright">
+				Edit
+				</th>
 				<th>
 				</th>
 			</tr>
@@ -110,12 +114,15 @@
 				<td class="check-paidinfull tableright">
 				<i class="fa fa-check"></i>
 				</td>
+				<td class="tableright">
+				<button class="nostyle" type="button" data-toggle="modal" data-target="#registrationsModal"><i class="fa fa-edit"></i></button>
+				</td>
 				<td class="tablecenter rowtoggle">
 				<i class="fa fa-plus-square-o closed"></i>
 				</td>
 			</tr>
 			<tr class="rowdetails">
-				<td colspan="7">
+				<td colspan="10">
 					<div class="well">
 						<div class="leftside">Year in School</div>
 						<div class="rightside">2014</div>
@@ -149,12 +156,15 @@
 				<td class="check-paidinfull tableright">
 				<i class="fa fa-check"></i>
 				</td>
+				<td class="tableright">
+				<button class="nostyle" type="button" data-toggle="modal" data-target="#registrationsModal"><i class="fa fa-edit"></i></button>
+				</td>
 				<td class="tablecenter rowtoggle">
 				<i class="fa fa-plus-square-o closed"></i>
 				</td>
 			</tr>
 			<tr class="rowdetails">
-				<td colspan="7">
+				<td colspan="10">
 					<div class="well">
 						<div class="leftside">Year in School</div>
 						<div class="rightside">2014</div>
@@ -188,12 +198,15 @@
 				<td class="check-paidinfull tableright">
 				<i class="fa fa-check"></i>
 				</td>
+				<td class="tableright">
+				<button class="nostyle" type="button" data-toggle="modal" data-target="#registrationsModal"><i class="fa fa-edit"></i></button>
+				</td>
 				<td class="tablecenter rowtoggle">
 				<i class="fa fa-plus-square-o closed"></i>
 				</td>
 			</tr>
 			<tr class="rowdetails">
-				<td colspan="7">
+				<td colspan="10">
 					<div class="well">
 						<div class="leftside">Year in School</div>
 						<div class="rightside">2014</div>
@@ -227,12 +240,15 @@
 				<td class="check-paidinfull tableright">
 				<i class="fa fa-check"></i>
 				</td>
+				<td class="tableright">
+				<button class="nostyle" type="button" data-toggle="modal" data-target="#registrationsModal"><i class="fa fa-edit"></i></button>
+				</td>
 				<td class="tablecenter rowtoggle">
 				<i class="fa fa-plus-square-o closed"></i>
 				</td>
 			</tr>
 			<tr class="rowdetails">
-				<td colspan="7">
+				<td colspan="10">
 					<div class="well">
 						<div class="leftside">Year in School</div>
 						<div class="rightside">2014</div>
@@ -266,12 +282,15 @@
 				<td class="check-paidinfull tableright">
 				<i class="fa fa-check"></i>
 				</td>
+				<td class="tableright">
+				<button class="nostyle" type="button" data-toggle="modal" data-target="#registrationsModal"><i class="fa fa-edit"></i></button>
+				</td>
 				<td class="tablecenter rowtoggle">
 				<i class="fa fa-plus-square-o closed"></i>
 				</td>
 			</tr>
 			<tr class="rowdetails">
-				<td colspan="7">
+				<td colspan="10">
 					<div class="well">
 						<div class="leftside">Year in School</div>
 						<div class="rightside">2014</div>
@@ -305,12 +324,15 @@
 				<td class="check-paidinfull tableright">
 				<i class="fa fa-check"></i>
 				</td>
+				<td class="tableright">
+				<button class="nostyle" type="button" data-toggle="modal" data-target="#registrationsModal"><i class="fa fa-edit"></i></button>
+				</td>
 				<td class="tablecenter rowtoggle">
 				<i class="fa fa-plus-square-o closed"></i>
 				</td>
 			</tr>
 			<tr class="rowdetails">
-				<td colspan="7">
+				<td colspan="10">
 					<div class="well">
 						<div class="leftside">Year in School</div>
 						<div class="rightside">2014</div>
@@ -344,12 +366,15 @@
 				<td class="check-paidinfull tableright">
 				<i class="fa fa-check"></i>
 				</td>
+				<td class="tableright">
+				<button class="nostyle" type="button" data-toggle="modal" data-target="#registrationsModal"><i class="fa fa-edit"></i></button>
+				</td>
 				<td class="tablecenter rowtoggle">
 				<i class="fa fa-plus-square-o closed"></i>
 				</td>
 			</tr>
 			<tr class="rowdetails">
-				<td colspan="7">
+				<td colspan="10">
 					<div class="well">
 						<div class="leftside">Year in School</div>
 						<div class="rightside">2014</div>
@@ -366,5 +391,6 @@
 			</tr>
 		</tbody>
 	</table>
+	<?php include('includes/registrations-modal.php'); ?>
 </main>
 <?php include('footer.php'); ?>
