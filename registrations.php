@@ -7,7 +7,7 @@
 				<h2>Northern Michigan Fall Extravaganza</h2>
 			</div>
 			<div class="col-xs-5 colright">
-				<a class="btn btn-success btn-sm" href="#"><i class="fa fa-plus"></i> Add Registration</a>
+				<button class="btn btn-success btn-sm" type="button" data-toggle="modal" data-target="#addregistrationModal"><i class="fa fa-plus"></i> Add Registration</button>
 				<a class="btn btn-primary btn-sm" href="#"><i class="fa fa-cloud-download"></i> Export Registrations</a>
 				<a class="btn btn-primary btn-sm" href="#"><i class="fa fa-cloud-download"></i> Export Payments</a>
 			</div>
@@ -112,7 +112,7 @@
 				Alpo
 				</td>
 				<td class="check-paidinfull tableright">
-				<i class="fa fa-check"></i>
+				<button class="nostyle" type="button" data-toggle="modal" data-target="#paymentsModal"><i class="fa fa-check"></i></button>
 				</td>
 				<td class="tableright">
 				<button class="nostyle" type="button" data-toggle="modal" data-target="#registrationsModal"><i class="fa fa-edit"></i></button>
@@ -124,16 +124,26 @@
 			<tr class="rowdetails">
 				<td colspan="10">
 					<div class="well">
-						<div class="leftside">Year in School</div>
-						<div class="rightside">2014</div>
-						<div class="leftside">Kitten's Name</div>
-						<div class="rightside">Fido the Feline</div>
-						<div class="leftside">May Kitten's Name</div>
-						<div class="rightside">Terry My Tiger</div>
-						<div class="leftside">Preferred Catfood Brand(s)</div>
-						<div class="rightside">Dog</div>
-						<div class="leftside">Favorite TV Show</div>
-						<div class="rightside">- House Wives of New York<br>- Montell Williams<br>- Days of Our Lives<br>- Glee</div>
+						<div class="row">
+							<div class="leftside">Year in School</div>
+							<div class="rightside">2014</div>
+						</div>
+						<div class="row">
+							<div class="leftside">Kitten's Name</div>
+							<div class="rightside">Fido the Feline</div>
+						</div>
+						<div class="row">
+							<div class="leftside">May Kitten's Name</div>
+							<div class="rightside">Terry My Tiger</div>
+						</div>
+						<div class="row">
+							<div class="leftside">Preferred Catfood Brand(s)</div>
+							<div class="rightside">Dog</div>
+						</div>
+						<div class="row">
+							<div class="leftside">Favorite TV Show</div>
+							<div class="rightside">- House Wives of New York<br>- Montell Williams<br>- Days of Our Lives<br>- Glee</div>
+						</div>
 					</div>
 				</td>
 			</tr>
@@ -154,7 +164,7 @@
 				Steak
 				</td>
 				<td class="check-paidinfull tableright">
-				<i class="fa fa-check"></i>
+				<button class="nostyle" type="button" data-toggle="modal" data-target="#paymentsModal"><i class="fa fa-times"></i></button>
 				</td>
 				<td class="tableright">
 				<button class="nostyle" type="button" data-toggle="modal" data-target="#registrationsModal"><i class="fa fa-edit"></i></button>
@@ -166,16 +176,26 @@
 			<tr class="rowdetails">
 				<td colspan="10">
 					<div class="well">
-						<div class="leftside">Year in School</div>
-						<div class="rightside">2014</div>
-						<div class="leftside">Kitten's Name</div>
-						<div class="rightside">Fido the Feline</div>
-						<div class="leftside">May Kitten's Name</div>
-						<div class="rightside">Terry My Tiger</div>
-						<div class="leftside">Preferred Catfood Brand(s)</div>
-						<div class="rightside">Dog</div>
-						<div class="leftside">Favorite TV Show</div>
-						<div class="rightside">- House Wives of New York<br>- Montell Williams<br>- Days of Our Lives<br>- Glee</div>
+						<div class="row">
+							<div class="leftside">Year in School</div>
+							<div class="rightside">2014</div>
+						</div>
+						<div class="row">
+							<div class="leftside">Kitten's Name</div>
+							<div class="rightside">Fido the Feline</div>
+						</div>
+						<div class="row">
+							<div class="leftside">May Kitten's Name</div>
+							<div class="rightside">Terry My Tiger</div>
+						</div>
+						<div class="row">
+							<div class="leftside">Preferred Catfood Brand(s)</div>
+							<div class="rightside">Dog</div>
+						</div>
+						<div class="row">
+							<div class="leftside">Favorite TV Show</div>
+							<div class="rightside">- House Wives of New York<br>- Montell Williams<br>- Days of Our Lives<br>- Glee</div>
+						</div>
 					</div>
 				</td>
 			</tr>
@@ -196,7 +216,7 @@
 				Alpo
 				</td>
 				<td class="check-paidinfull tableright">
-				<i class="fa fa-check"></i>
+				<button class="nostyle" type="button" data-toggle="modal" data-target="#paymentsModal"><i class="fa fa-check"></i></button>
 				</td>
 				<td class="tableright">
 				<button class="nostyle" type="button" data-toggle="modal" data-target="#registrationsModal"><i class="fa fa-edit"></i></button>
@@ -208,16 +228,30 @@
 			<tr class="rowdetails">
 				<td colspan="10">
 					<div class="well">
-						<div class="leftside">Year in School</div>
-						<div class="rightside">2014</div>
-						<div class="leftside">Kitten's Name</div>
-						<div class="rightside">Fido the Feline</div>
-						<div class="leftside">May Kitten's Name</div>
-						<div class="rightside">Terry My Tiger</div>
-						<div class="leftside">Preferred Catfood Brand(s)</div>
-						<div class="rightside">Dog</div>
-						<div class="leftside">Favorite TV Show</div>
-						<div class="rightside">- House Wives of New York<br>- Montell Williams<br>- Days of Our Lives<br>- Glee</div>
+						<div class="row">
+							<div class="leftside">Year in School</div>
+							<div class="rightside">2014</div>
+						</div>
+						<div class="row">
+							<div class="leftside">Kitten's Name</div>
+							<div class="rightside">Fido the Feline</div>
+						</div>
+						<div class="row">
+							<div class="leftside">May Kitten's Name</div>
+							<div class="rightside">Terry My Tiger</div>
+						</div>
+						<div class="row">
+							<div class="leftside">Preferred Catfood Brand(s)</div>
+							<div class="rightside">Dog</div>
+						</div>
+						<div class="row">
+							<div class="leftside">Favorite TV Show</div>
+							<div class="rightside">- House Wives of New York<br>- Montell Williams<br>- Days of Our Lives<br>- Glee</div>
+						</div>
+						<div class="row">
+							<div class="leftside">Preferred Catfood Brand(s)</div>
+							<div class="rightside">Dog</div>
+						</div>
 					</div>
 				</td>
 			</tr>
@@ -238,7 +272,7 @@
 				Purina
 				</td>
 				<td class="check-paidinfull tableright">
-				<i class="fa fa-check"></i>
+				<button class="nostyle" type="button" data-toggle="modal" data-target="#paymentsModal"><i class="fa fa-check"></i></button>
 				</td>
 				<td class="tableright">
 				<button class="nostyle" type="button" data-toggle="modal" data-target="#registrationsModal"><i class="fa fa-edit"></i></button>
@@ -250,16 +284,26 @@
 			<tr class="rowdetails">
 				<td colspan="10">
 					<div class="well">
-						<div class="leftside">Year in School</div>
-						<div class="rightside">2014</div>
-						<div class="leftside">Kitten's Name</div>
-						<div class="rightside">Fido the Feline</div>
-						<div class="leftside">May Kitten's Name</div>
-						<div class="rightside">Terry My Tiger</div>
-						<div class="leftside">Preferred Catfood Brand(s)</div>
-						<div class="rightside">Dog</div>
-						<div class="leftside">Favorite TV Show</div>
-						<div class="rightside">- House Wives of New York<br>- Montell Williams<br>- Days of Our Lives<br>- Glee</div>
+						<div class="row">
+							<div class="leftside">Year in School</div>
+							<div class="rightside">2014</div>
+						</div>
+						<div class="row">
+							<div class="leftside">Kitten's Name</div>
+							<div class="rightside">Fido the Feline</div>
+						</div>
+						<div class="row">
+							<div class="leftside">May Kitten's Name</div>
+							<div class="rightside">Terry My Tiger</div>
+						</div>
+						<div class="row">
+							<div class="leftside">Preferred Catfood Brand(s)</div>
+							<div class="rightside">Dog</div>
+						</div>
+						<div class="row">
+							<div class="leftside">Favorite TV Show</div>
+							<div class="rightside">- House Wives of New York<br>- Montell Williams<br>- Days of Our Lives<br>- Glee</div>
+						</div>
 					</div>
 				</td>
 			</tr>
@@ -280,7 +324,7 @@
 				Chocolate
 				</td>
 				<td class="check-paidinfull tableright">
-				<i class="fa fa-check"></i>
+				<button class="nostyle" type="button" data-toggle="modal" data-target="#paymentsModal"><i class="fa fa-times"></i></button>
 				</td>
 				<td class="tableright">
 				<button class="nostyle" type="button" data-toggle="modal" data-target="#registrationsModal"><i class="fa fa-edit"></i></button>
@@ -292,16 +336,26 @@
 			<tr class="rowdetails">
 				<td colspan="10">
 					<div class="well">
-						<div class="leftside">Year in School</div>
-						<div class="rightside">2014</div>
-						<div class="leftside">Kitten's Name</div>
-						<div class="rightside">Fido the Feline</div>
-						<div class="leftside">May Kitten's Name</div>
-						<div class="rightside">Terry My Tiger</div>
-						<div class="leftside">Preferred Catfood Brand(s)</div>
-						<div class="rightside">Dog</div>
-						<div class="leftside">Favorite TV Show</div>
-						<div class="rightside">- House Wives of New York<br>- Montell Williams<br>- Days of Our Lives<br>- Glee</div>
+						<div class="row">
+							<div class="leftside">Year in School</div>
+							<div class="rightside">2014</div>
+						</div>
+						<div class="row">
+							<div class="leftside">Kitten's Name</div>
+							<div class="rightside">Fido the Feline</div>
+						</div>
+						<div class="row">
+							<div class="leftside">May Kitten's Name</div>
+							<div class="rightside">Terry My Tiger</div>
+						</div>
+						<div class="row">
+							<div class="leftside">Preferred Catfood Brand(s)</div>
+							<div class="rightside">Dog</div>
+						</div>
+						<div class="row">
+							<div class="leftside">Favorite TV Show</div>
+							<div class="rightside">- House Wives of New York<br>- Montell Williams<br>- Days of Our Lives<br>- Glee</div>
+						</div>
 					</div>
 				</td>
 			</tr>
@@ -322,7 +376,7 @@
 				Dog
 				</td>
 				<td class="check-paidinfull tableright">
-				<i class="fa fa-check"></i>
+				<button class="nostyle" type="button" data-toggle="modal" data-target="#paymentsModal"><i class="fa fa-check"></i></button>
 				</td>
 				<td class="tableright">
 				<button class="nostyle" type="button" data-toggle="modal" data-target="#registrationsModal"><i class="fa fa-edit"></i></button>
@@ -334,16 +388,26 @@
 			<tr class="rowdetails">
 				<td colspan="10">
 					<div class="well">
-						<div class="leftside">Year in School</div>
-						<div class="rightside">2014</div>
-						<div class="leftside">Kitten's Name</div>
-						<div class="rightside">Fido the Feline</div>
-						<div class="leftside">May Kitten's Name</div>
-						<div class="rightside">Terry My Tiger</div>
-						<div class="leftside">Preferred Catfood Brand(s)</div>
-						<div class="rightside">Dog</div>
-						<div class="leftside">Favorite TV Show</div>
-						<div class="rightside">- House Wives of New York<br>- Montell Williams<br>- Days of Our Lives<br>- Glee</div>
+						<div class="row">
+							<div class="leftside">Year in School</div>
+							<div class="rightside">2014</div>
+						</div>
+						<div class="row">
+							<div class="leftside">Kitten's Name</div>
+							<div class="rightside">Fido the Feline</div>
+						</div>
+						<div class="row">
+							<div class="leftside">May Kitten's Name</div>
+							<div class="rightside">Terry My Tiger</div>
+						</div>
+						<div class="row">
+							<div class="leftside">Preferred Catfood Brand(s)</div>
+							<div class="rightside">Dog</div>
+						</div>
+						<div class="row">
+							<div class="leftside">Favorite TV Show</div>
+							<div class="rightside">- House Wives of New York<br>- Montell Williams<br>- Days of Our Lives<br>- Glee</div>
+						</div>
 					</div>
 				</td>
 			</tr>
@@ -364,7 +428,7 @@
 				The Best
 				</td>
 				<td class="check-paidinfull tableright">
-				<i class="fa fa-check"></i>
+				<button class="nostyle" type="button" data-toggle="modal" data-target="#paymentsModal"><i class="fa fa-times"></i></button>
 				</td>
 				<td class="tableright">
 				<button class="nostyle" type="button" data-toggle="modal" data-target="#registrationsModal"><i class="fa fa-edit"></i></button>
@@ -376,21 +440,33 @@
 			<tr class="rowdetails">
 				<td colspan="10">
 					<div class="well">
-						<div class="leftside">Year in School</div>
-						<div class="rightside">2014</div>
-						<div class="leftside">Kitten's Name</div>
-						<div class="rightside">Fido the Feline</div>
-						<div class="leftside">May Kitten's Name</div>
-						<div class="rightside">Terry My Tiger</div>
-						<div class="leftside">Preferred Catfood Brand(s)</div>
-						<div class="rightside">Dog</div>
-						<div class="leftside">Favorite TV Show</div>
-						<div class="rightside">- House Wives of New York<br>- Montell Williams<br>- Days of Our Lives<br>- Glee</div>
+						<div class="row">
+							<div class="leftside">Year in School</div>
+							<div class="rightside">2014</div>
+						</div>
+						<div class="row">
+							<div class="leftside">Kitten's Name</div>
+							<div class="rightside">Fido the Feline</div>
+						</div>
+						<div class="row">
+							<div class="leftside">May Kitten's Name</div>
+							<div class="rightside">Terry My Tiger</div>
+						</div>
+						<div class="row">
+							<div class="leftside">Preferred Catfood Brand(s)</div>
+							<div class="rightside">Dog</div>
+						</div>
+						<div class="row">
+							<div class="leftside">Favorite TV Show</div>
+							<div class="rightside">- House Wives of New York<br>- Montell Williams<br>- Days of Our Lives<br>- Glee</div>
+						</div>
 					</div>
 				</td>
 			</tr>
 		</tbody>
 	</table>
 	<?php include('includes/registrations-modal.php'); ?>
+	<?php include('includes/add-registration.php'); ?>
+	<?php include('includes/paid-in-full.php'); ?>
 </main>
 <?php include('footer.php'); ?>

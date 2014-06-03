@@ -308,8 +308,9 @@ main.registrations {
 			overflow: auto;
 			.leftside {
 				width: 18%;
-				padding-right: 2%;
-				float: left;
+				padding-right: 1%;
+				display: inline-block;
+				vertical-align: top;
 				text-align: right;
 				.proximasemi;
 				font-size: 14px;
@@ -317,7 +318,8 @@ main.registrations {
 			}
 			.rightside {
 				width: 80%;
-				float: left;
+				display: inline-block;
+				vertical-align: top;
 				.proxima;
 				font-size: 14px;
 				.darkgray;
@@ -717,7 +719,9 @@ body {
 	}
 	.bootstrap-datetimepicker-widget { z-index: 10000; }
 	button.nostyle { background: none; border: none; padding: 0; }
-	#registrationsModal input { margin-bottom: 9px; }
+	#registrationsModal, #addregistrationModal, #paymentsModal {
+		input { margin-bottom: 9px; }
+	}
 }
 
 /***** BOOTSTRAP DEFAULT OVERRIDES *****/
