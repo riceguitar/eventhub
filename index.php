@@ -3,7 +3,14 @@
 <main class="container<?php echo ' ' . preg_replace("/[\s_]/", "-", strtolower($pagetitle)); ?>">
 	<div class="row">
 		<div class="col-xs-8">
-			<p>Showing <strong>1-10 of 20</strong> forms</p>
+			<div class="row">
+				<div class="col-xs-8">
+					<p>Showing <strong>1-2 of 20</strong> forms</p>
+				</div>
+				<div class="col-xs-4">
+					<input type="text" class="form-control" placeholder="Narrow Results">
+				</div>
+			</div>
 			<ul id="sortable">
 				<li class="form">
 					<h2>Leadership Retreat</h2>
