@@ -97,4 +97,20 @@ jQuery(function($) {
 		}
 	});
 	
+	$( ".elements-list li" ).draggable({
+		helper: "clone",
+		revert: "invalid",
+		drag: function(event, ui) { 
+			ui.helper.css('z-index', '2000');
+		}
+	});
+	$( "#droppable" ).droppable({
+		activeClass: "ui-state-default",
+		hoverClass: "ui-state-hover",
+		drop: function( event, ui ) {
+			var draggedid = $(ui.draggable).attr('id').substring(5);
+			$('#sortable').append($('<div class="formelement">').load('../includes/'+ draggedid +'.php'));
+		}
+	});
+	
 });

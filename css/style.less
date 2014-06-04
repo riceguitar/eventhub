@@ -330,17 +330,6 @@ main.registrations {
 main.form-builder {
 	.elements-list {
 		margin-bottom: 25px;
-		button {
-			border: 1px solid @green;
-			padding: 5px;
-			.darkgray;
-			.proximasemi;
-			font-size: 14px;
-			i {
-				.green;
-				font-size: 16px;
-			}
-		}
 	}
 	.form-page {
 		border-left: 2px solid #cccccc;
@@ -379,6 +368,7 @@ main.form-builder {
 				}
 			}
 		}
+		.well.ui-state-hover { background: @creme; }
 		.well { background: transparent; padding-bottom: 25px;
 			.well { background: transparent; border: 1px solid @white; box-shadow: none;
 				&:hover { border: 1px solid #E3E3E3; background: @creme; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset; 
@@ -614,6 +604,23 @@ main.dashboard {
 
 /***** MISC *****/
 body {
+	li.btn.btn-default.btn-sm.btn-block {
+			border: 1px solid @green;
+			padding: 5px;
+			max-width: 300px;
+			.darkgray;
+			.proximasemi;
+			font-size: 14px;
+			i {
+				.green;
+				font-size: 16px;
+				margin-bottom: 5px;
+				margin-top: -18px;
+				text-align: right;
+				vertical-align: middle;
+				display: block;
+			}
+	}
 	button.btn-md.addon {
 		padding: 0 0 0 12px;
 	}
@@ -678,13 +685,6 @@ body {
 	article { position: relative; }
 	.btn.text-left {
 		  text-align:left;
-	}
-	.elements-list .btn i {
-		margin-bottom: 5px;
-		margin-top: -18px;
-		text-align: right;
-		vertical-align: middle;
-		display: block;
 	}
 	.tableright {
 		text-align: right;
