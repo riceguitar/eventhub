@@ -1,4 +1,3 @@
-<li class="handle">
 	<div class="well well-sm edit-box-address">
 		<div class="row">
 			<div class="col-xs-2">
@@ -121,4 +120,3 @@
 			</div>
 		</div>
 	</div>
-</li>

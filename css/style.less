@@ -182,6 +182,8 @@ main {
 #pagefooter {
 	background: @paleblue;
 	height: 248px;
+	z-index: 5000;
+	position:relative;
 	padding: 22px 0 0;
 	border-top: 1px solid #c7ecff;
 	border-bottom: 1px solid #c7ecff;
@@ -280,7 +282,9 @@ main.registrations {
 			input {
 				margin-right: 3px;
 			}
-			span { padding: 0 10px; }
+			span { padding: 0 10px 0 25px; line-height: 18px; display: block; margin-bottom: 4px;
+				input { margin-left: -15px; }
+			}
 		}
 	}
 	.col-xs-3 { margin-top: 10px; margin-bottom: 10px; }
@@ -330,29 +334,34 @@ main.registrations {
 main.form-builder {
 	.elements-list {
 		margin-bottom: 25px;
+		top: 0;
+		width: 290px;
 	}
 	.form-page {
 		border-left: 2px solid #cccccc;
+		float: right;
 		min-height: 500px;
 		a.btn + a.btn { margin-left: 10px; }
 		ul.pager { display: inline-block; margin-right: 20px; }
-		.overflow { overflow: scroll; height: 450px; 
+		.overflow { min-height: 450px; 
 			.shrink { width: 90%; }
 		}
 		form { margin-top: 30px; }
+		.padded { margin-top: 20px; }
 		h1 {
 			.green;
 			.proximabold;
 			font-size: 30px;
 			border-bottom: 3px solid #e9e9e9;
 			padding-bottom: 10px;
+			margin-top: 0;
 			input {
 				boxshadow: none;
 				border: none;
 			}
 		}
-		.formelement.edit {
-			.well {
+		li {
+			.well.edit {
 				border: 1px solid #E3E3E3; background: @creme; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset; 
 				.col-xs-2 {
 					opacity: 1;
@@ -603,7 +612,13 @@ main.dashboard {
 }
 
 /***** MISC *****/
-body {
+ul#sortable1 {
+	padding: 0;
+	li {
+		div.well {
+			display: none;
+		}
+	}
 	li.btn.btn-default.btn-sm.btn-block {
 			border: 1px solid @green;
 			padding: 5px;
@@ -621,6 +636,22 @@ body {
 				display: block;
 			}
 	}
+}
+ul#sortable2 {
+	padding: 0 !important;
+	span.text { display:none; }
+	i.fabtn { display:none; }
+	.btn { border: none !important; background: none; 
+		&:hover { background: none !important; }
+	}
+	.well {
+		margin-bottom: 0;
+	}
+}
+.connectedSortable {
+	min-height: 300px;
+}
+body {
 	button.btn-md.addon {
 		padding: 0 0 0 12px;
 	}

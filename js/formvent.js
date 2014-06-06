@@ -13,49 +13,15 @@ jQuery(function($) {
     });
 
 	$('#sortable').sortable( { handle: '.handle' } );
-		
-	$('#ajax-address').click( function() {
-		$('#sortable').append($('<div class="formelement">').load('../includes/address.php'));
-	});
-	$('#ajax-checkbox').click( function() {
-		$('#sortable').append($('<div class="formelement">').load('../includes/checkbox.php'));
-	});
-	$('#ajax-dropdown').click( function() {
-		$('#sortable').append($('<div class="formelement">').load('../includes/dropdown.php'));
-	});
-	$('#ajax-email').click( function() {
-		$('#sortable').append($('<div class="formelement">').load('../includes/email.php'));
-	});
-	$('#ajax-telephone').click( function() {
-		$('#sortable').append($('<div class="formelement">').load('../includes/telephone.php'));
-	});
-	$('#ajax-gender').click( function() {
-		$('#sortable').append($('<div class="formelement">').load('../includes/gender.php'));
-	});
-	$('#ajax-information').click( function() {
-		$('#sortable').append($('<div class="formelement">').load('../includes/information.php'));
-	});
-	$('#ajax-multiple-choice').click( function() {
-		$('#sortable').append($('<div class="formelement">').load('../includes/multiple-choice.php'));
-	});
-	$('#ajax-name').click( function() {
-		$('#sortable').append($('<div class="formelement">').load('../includes/name.php'));
-	});
-	$('#ajax-number').click( function() {
-		$('#sortable').append($('<div class="formelement">').load('../includes/number.php'));
-	});
-	$('#ajax-single-line-question').click( function() {
-		$('#sortable').append($('<div class="formelement">').load('../includes/single-line-question.php'));
-	});
 	
 	$(document).on('click', '.delete-btn', function(event) {
-		$(event.target).closest('.formelement').remove();
+		$(event.target).closest('.text-left').remove();
 	});
 	$(document).on('click', '.copy-btn', function(event) {
-		$(event.target).closest('.formelement').clone().appendTo( '#sortable' );;
+		$(event.target).closest('.text-left').clone().appendTo( '#sortable2' );;
 	});
 	$(document).on('click', '.editme', function(event) {
-		$(event.target).closest('.formelement').toggleClass('edit');
+		$(event.target).closest('.well').toggleClass('edit');
 	});
 	$(document).on('change', '.field-label', function() {
 		$(this).parent().parent().parent().parent().parent().children('div').children('div').children('.field-label').html($(this).val());
@@ -96,21 +62,61 @@ jQuery(function($) {
 			$('.'+ column).css('display', 'none');
 		}
 	});
+	$(window).scroll(function() {
+		var yOffset = $(window).scrollTop();
+		var elementlist = $('.waypoint1').offset().top;
+		if (yOffset - elementlist > 0) {
+			$('.elements-list').css('position', 'fixed');
+		}
+		else {
+			$('.elements-list').css('position', 'relative');
+		}
+	});
 	
-	$( ".elements-list li" ).draggable({
-		helper: "clone",
-		revert: "invalid",
-		drag: function(event, ui) { 
-			ui.helper.css('z-index', '2000');
-		}
+	$( "#sortable1, #sortable2" ).sortable({
+		connectWith: "#sortable2",
+		helper: 'clone'
+	}).enableSelection();
+	$('#sortable1').bind('sortstop', function(event, ui) {
+		var idx = $('#sortable2').children().index($(ui.item[0]))-1,
+		elm = $(ui.item[0]).clone(true);
+		$('#sortable2').children(':eq('+idx+')').after(elm);
+		$(this).sortable('cancel');
 	});
-	$( "#droppable" ).droppable({
-		activeClass: "ui-state-default",
-		hoverClass: "ui-state-hover",
-		drop: function( event, ui ) {
-			var draggedid = $(ui.draggable).attr('id').substring(5);
-			$('#sortable').append($('<div class="formelement">').load('../includes/'+ draggedid +'.php'));
-		}
+	
+	$('#ajax-address').click( function() {
+		$('#sortable2').append($('<li class="btn btn-default btn-sm btn-block text-left">').load('../includes/address.php'));
 	});
+	$('#ajax-checkbox').click( function() {
+		$('#sortable2').append($('<li class="btn btn-default btn-sm btn-block text-left">').load('../includes/checkbox.php'));
+	});
+	$('#ajax-dropdown').click( function() {
+		$('#sortable2').append($('<li class="btn btn-default btn-sm btn-block text-left">').load('../includes/dropdown.php'));
+	});
+	$('#ajax-email').click( function() {
+		$('#sortable2').append($('<li class="btn btn-default btn-sm btn-block text-left">').load('../includes/email.php'));
+	});
+	$('#ajax-telephone').click( function() {
+		$('#sortable2').append($('<li class="btn btn-default btn-sm btn-block text-left">').load('../includes/telephone.php'));
+	});
+	$('#ajax-gender').click( function() {
+		$('#sortable2').append($('<li class="btn btn-default btn-sm btn-block text-left">').load('../includes/gender.php'));
+	});
+	$('#ajax-information').click( function() {
+		$('#sortable2').append($('<li class="btn btn-default btn-sm btn-block text-left">').load('../includes/information.php'));
+	});
+	$('#ajax-multiple-choice').click( function() {
+		$('#sortable2').append($('<li class="btn btn-default btn-sm btn-block text-left">').load('../includes/multiple-choice.php'));
+	});
+	$('#ajax-name').click( function() {
+		$('#sortable2').append($('<li class="btn btn-default btn-sm btn-block text-left">').load('../includes/name.php'));
+	});
+	$('#ajax-number').click( function() {
+		$('#sortable2').append($('<li class="btn btn-default btn-sm btn-block text-left">').load('../includes/number.php'));
+	});
+	$('#ajax-single-line-question').click( function() {
+		$('#sortable2').append($('<li class="btn btn-default btn-sm btn-block text-left">').load('../includes/single-line-question.php'));
+	});
+
 	
 });
