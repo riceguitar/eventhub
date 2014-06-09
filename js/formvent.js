@@ -84,37 +84,37 @@ jQuery(function($) {
 		$(this).sortable('cancel');
 	});
 	
-	$('#ajax-address').click( function() {
+	$('#sortable1 #ajax-address').click( function() {
 		$('#sortable2').append($('<li class="btn btn-default btn-sm btn-block text-left">').load('../includes/address.php'));
 	});
-	$('#ajax-checkbox').click( function() {
+	$('#sortable1 #ajax-checkbox').click( function() {
 		$('#sortable2').append($('<li class="btn btn-default btn-sm btn-block text-left">').load('../includes/checkbox.php'));
 	});
-	$('#ajax-dropdown').click( function() {
+	$('#sortable1 #ajax-dropdown').click( function() {
 		$('#sortable2').append($('<li class="btn btn-default btn-sm btn-block text-left">').load('../includes/dropdown.php'));
 	});
-	$('#ajax-email').click( function() {
+	$('#sortable1 #ajax-email').click( function() {
 		$('#sortable2').append($('<li class="btn btn-default btn-sm btn-block text-left">').load('../includes/email.php'));
 	});
-	$('#ajax-telephone').click( function() {
+	$('#sortable1 #ajax-telephone').click( function() {
 		$('#sortable2').append($('<li class="btn btn-default btn-sm btn-block text-left">').load('../includes/telephone.php'));
 	});
-	$('#ajax-gender').click( function() {
+	$('#sortable1 #ajax-gender').click( function() {
 		$('#sortable2').append($('<li class="btn btn-default btn-sm btn-block text-left">').load('../includes/gender.php'));
 	});
-	$('#ajax-information').click( function() {
+	$('#sortable1 #ajax-information').click( function() {
 		$('#sortable2').append($('<li class="btn btn-default btn-sm btn-block text-left">').load('../includes/information.php'));
 	});
-	$('#ajax-multiple-choice').click( function() {
+	$('#sortable1 #ajax-multiple-choice').click( function() {
 		$('#sortable2').append($('<li class="btn btn-default btn-sm btn-block text-left">').load('../includes/multiple-choice.php'));
 	});
-	$('#ajax-name').click( function() {
+	$('#sortable1 #ajax-name').click( function() {
 		$('#sortable2').append($('<li class="btn btn-default btn-sm btn-block text-left">').load('../includes/name.php'));
 	});
-	$('#ajax-number').click( function() {
+	$('#sortable1 #ajax-number').click( function() {
 		$('#sortable2').append($('<li class="btn btn-default btn-sm btn-block text-left">').load('../includes/number.php'));
 	});
-	$('#ajax-single-line-question').click( function() {
+	$('#sortable1 #ajax-single-line-question').click( function() {
 		$('#sortable2').append($('<li class="btn btn-default btn-sm btn-block text-left">').load('../includes/single-line-question.php'));
 	});
 
